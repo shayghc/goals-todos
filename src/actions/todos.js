@@ -1,4 +1,3 @@
-
 import API from 'goals-todos-api'
 
 export const ADD_TODO = 'ADD_TODO';
@@ -48,7 +47,7 @@ export function handleAddTodo(name, cb) {
     }
 }
 
-function handleToggle(id) {
+export function handleToggle(id) {
     return (dispatch) => {
         dispatch(toggleTodo(id))
 
